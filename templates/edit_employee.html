@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+{% block title %}Edit Employee{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h2>Edit Employee</h2>
+    <form action="/edit_employee/{{ employee.id }}" method="POST">
+        <input type="hidden" id="id" name="id" value="{{ employee.id }}">
+        <label for="employeeName">Name:</label><br>
+        <input type="text" id="employeeName" name="employeeName" value="{{ employee.name }}" required><br><br>
+
+        <label for="employeeEmail">Email:</label><br>
+        <input type="email" id="employeeEmail" name="employeeEmail" value="{{ employee.email }}" required><br><br>
+
+        <label for="employeePhone">Phone:</label><br>
+        <input type="text" id="employeePhone" name="employeePhone" value="{{ employee.number }}" required><br><br>
+
+        <button type="submit">Update Employee</button>
+    </form>
+</div>
+{% endblock %}
