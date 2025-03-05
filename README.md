@@ -1,6 +1,3 @@
-Here’s a comprehensive `README.md` file for your Flask CRUD application. This file provides an overview of the project, instructions for setting it up, and details about its functionality.
-
----
 
 # Flask CRUD Employee Management Application
 
